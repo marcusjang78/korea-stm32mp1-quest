@@ -19,7 +19,9 @@
 
 ### Host PC
 
- - [Ubuntu 18.04 LTS](https://ubuntu.com/#download)
+ - 권장 PC 사양 : HDD 500G 이상
+ - 필수 OS : [Ubuntu 18.04 LTS](https://ubuntu.com/#download)
+ - 그외 환경 : Ethernet LAN
 
 ### 그외 참조
 
