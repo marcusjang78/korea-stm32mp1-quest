@@ -10,7 +10,7 @@ STM32MP1 microprocessor와 ecosystem의 다양한 주제들에 대해 단계별�
 | Title | Date | Week | Note
 | :------------: | :------------: |:------------: |:------------: |
 | Orientation | 2020.01.09 | week.2 | |
-| Quest-1 | 2020.01.13 ~ 17 | week.3 | |
+| Quest-1 | 2020.01.13 ~ 17 | week.3 |[Quest 보기](https://github.com/marcusjang78/korea-stm32mp1-quest/blob/master/mp1-quest-01/README.md)|
 | Quest-2 | 2020.01.20 ~ 31 | week.4/5 | 구정 연휴로 인해 2주간 진행
 | Quest-3 | 2020.02.03 ~ 07 | week.6 | ||
 > 이 후 일정에 대해서는 지속적으로 업데이트 예정.
