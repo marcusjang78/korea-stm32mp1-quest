@@ -38,7 +38,7 @@
     <img src="https://github.com/marcusjang78/korea-stm32mp1-quest/blob/master/mp1-quest-01/images/about.shell.png" alt="" width="80%" height="80%" /><br/>
       <img src="https://github.com/marcusjang78/korea-stm32mp1-quest/blob/master/mp1-quest-01/images/shell-log.png" alt="" width="80%" height="80%" /><br/>
       <img src="https://github.com/marcusjang78/korea-stm32mp1-quest/blob/master/mp1-quest-01/images/python.png" alt="" width="80%" height="80%" /><br/>
-    - Wireless network 설정은 [How to setup wifi connection](https://wiki.st.com/stm32mpu/wiki/How_to_setup_wifi_connection)를 참조. (아래는 무선 및 유선 네트워크가 모두 연결된 경우)
-     <img src="https://github.com/marcusjang78/korea-stm32mp1-quest/blob/master/mp1-quest-01/images/eth-wlan.png" alt="" width="80%" height="80%" /><br/>
+    - 무선 네트워크 설정은 [How to setup wifi connection](https://wiki.st.com/stm32mpu/wiki/How_to_setup_wifi_connection)를 참조. (아래는 무선 및 유선 네트워크가 모두 연결된 경우)
+    <img src="https://github.com/marcusjang78/korea-stm32mp1-quest/blob/master/mp1-quest-01/images/eth-wlan.png" alt="" width="80%" height="80%" /><br/>
     
     - Ecosystem에서 제공하는 기본 데모에 대해서는 [Use the demo launcher](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Let%27s_start/Use_the_demo_launcher)를 참고.
