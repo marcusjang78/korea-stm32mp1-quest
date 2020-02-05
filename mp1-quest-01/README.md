@@ -25,11 +25,11 @@
 #### § 보드에 이미지를 다운로드 
   - [Populate the Board](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Let%27s_start/Populate_the_target_and_boot_the_image#Populate_the_SDCard)의 내용대로 보드를 설정하고 CubeProgrammer를 통해 이미지를 다운로드 한다.
     - 특히 다운로드를 위해서는 Boot pin을 조작해 boot mode를 `Serial`로 설정해야 함에 유의한다. Boot mode에 대한 자세한 내용은 [Boot Pin](https://wiki.st.com/stm32mpu/wiki/STM32MP15_ROM_code_overview#Configuration)을 참고.
-    - STM32CubeProgrammer의 경우 command line 수행도 가능하다. [이곳](https://wiki.st.com/stm32mpu/wiki/STM32CubeProgrammer#How_to_flash_with_STM32CubeProgrammer)을 참고.
+    - STM32CubeProgrammer의 경우 command line 수행도 가능하다. [How to flash with STM32CubeProgrammer](https://wiki.st.com/stm32mpu/wiki/STM32CubeProgrammer#How_to_flash_with_STM32CubeProgrammer)을 참고.
       - `STM32_Programmer_CLI -l`
       - `STM32_Programmer_CLI -c port=usb1 -w flashlayout_st-image-weston/FlashLayout_sdcard_stm32mp157c-dk2-trusted.tsv`
       <img src="https://github.com/marcusjang78/korea-stm32mp1-quest/blob/master/mp1-quest-01/images/about.usb.png" alt="" width="80%" height="80%" />
-    - DK2 보드는 Sdcard를 단일 스토리지로 가지기 때문에 이미지는 이곳으로 다운로드 된다. (FlashLayout_sdcard_*.tsv)
+    - DK2 보드는 Sdcard를 단일 스토리지를 가지기 때문에 이미지는 이곳으로 다운로드 된다. (FlashLayout_sdcard_*.tsv)
     - 다운로드 과정은 DK2 보드의 LCD 화면과 `ST-LINK/V2-1`를 통해 연결된 CDC terminal(/dev/ttyACM*)로도 확인이 가능.
 #### § 보드를 정상 부팅하여 동작 확인
   - [Boot the board](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Let%27s_start/Populate_the_target_and_boot_the_image#Boot_the_board)를 참고하여 보드가 정상 부팅하여 이미지가 잘 다운로드 되었는지 확인한다.
