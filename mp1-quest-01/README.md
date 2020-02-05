@@ -36,6 +36,9 @@
     - 마찬가지로 Boot pin - boot mode 설정에 유의한다.
     - `ST-LINK/V2-1`이 연결된 경우에는 부트 및 리눅스 커널 로그가 확인 가능하고 부팅 완료 후 쉘 프롬프트가 표시되면 기본적인 명령어를 입력할 수 있다. 이외에도 네트워크(ethernet), Python등이 가능한데 [Execute basic commands](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Let%27s_start/Execute_basic_commands)를 반드시 실행해 보자.<br/>
     <img src="https://github.com/marcusjang78/korea-stm32mp1-quest/blob/master/mp1-quest-01/images/about.shell.png" alt="" width="80%" height="80%" /><br/>
-      <img src="https://github.com/marcusjang78/korea-stm32mp1-quest/blob/master/mp1-quest-01/images/shell-log.png" alt="" width="80%" height="80%" />
+      <img src="https://github.com/marcusjang78/korea-stm32mp1-quest/blob/master/mp1-quest-01/images/shell-log.png" alt="" width="80%" height="80%" /><br/>
       <img src="https://github.com/marcusjang78/korea-stm32mp1-quest/blob/master/mp1-quest-01/images/python.png" alt="" width="80%" height="80%" /><br/>
+    - Wireless network 설정은 [How to setup wifi connection](https://wiki.st.com/stm32mpu/wiki/How_to_setup_wifi_connection)를 참조. (아래는 무선 및 유선 네트워크가 모두 연결된 경우)
+      <img src="https://github.com/marcusjang78/korea-stm32mp1-quest/blob/master/mp1-quest-01/images/eth-wlan.png" alt="" width="80%" height="80%" /><br/>
+    
     - Ecosystem에서 제공하는 기본 데모에 대해서는 [Use the demo launcher](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Let%27s_start/Use_the_demo_launcher)를 참고.
