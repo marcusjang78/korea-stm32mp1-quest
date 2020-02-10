@@ -36,7 +36,7 @@ Deveoper Package에서는 사용자가 타겟 시스템을 빌드했던 환경(�
 
 <br/><br/>
 ### STEP.3
-#### § A7 어플리케이션 작성 및 확인
+#### § A7 애플리케이션 작성 및 확인
   - 기본 제공되는 ecosystem, st-image-weston (openstlinux-weston)은 [Wayland](https://ko.wikipedia.org/wiki/%EC%9B%A8%EC%9D%B4%EB%9E%9C%EB%93%9C) 기반에 GTK+ GUI 환경을 제공한다.<br/>
   [Create a simple hello-world application](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Develop_on_Arm%C2%AE_Cortex%C2%AE-A7/Create_a_simple_hello-world_application) 항목을 통해 앞서 설치한 SDK를 사용하여 GTK+ application을 빌드하고 타겟에 배포(deploy by scp tool)하여 동작을 확인해 볼 수 있다.
     <kbd><img src="https://wiki.st.com/stm32mpu/nsfr_img_auth.php/thumb/c/c9/STM32MP1_gtk_hello_world.png/600px-STM32MP1_gtk_hello_world.png" alt="" width="100%" height="100%" /></kbd>
