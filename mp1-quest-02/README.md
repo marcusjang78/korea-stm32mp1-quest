@@ -64,14 +64,12 @@ Deveoper Package에서는 사용자가 타겟 시스템을 빌드했던 환경(�
     - 빌드 과정은 `리눅스 커널 이미지`와 커널이 런타임에 동적으로 로드하는 `커널 모듈` 빌드의 두가지 단계로 크게 구성된다.
     - 모든 과정을 완료하면 vmlinux(elf)와 이를 바탕으로 생성된 uImage(compressed + u-boot wrapper) 외에 device tree (dtbs), artifact들이 생성되는데 대략 아래와 같다.
       <img src="https://github.com/marcusjang78/korea-stm32mp1-quest/blob/master/mp1-quest-02/images/build-outputs.png" alt="" width="100%" height="100%" />
-#### § 타겟 보드로 커널 재배포
+#### § 타겟 보드로 커널 재배포 (Working in progress)
   - [Deploy the Linux® kernel on the board](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Develop_on_Arm%C2%AE_Cortex%C2%AE-A7/Modify,_rebuild_and_reload_the_Linux%C2%AE_kernel#Build_the_Linux-C2-AE_kernel_source_code_for_the_first_time)를 참고하여 빌드된 Kernel, kernel modules, Device Tree등을 타겟 보드로 배포하고 정상 부팅하는지 확인해 본다.
-  > Working-on progress.
-#### § 커널 드라이버 수정하여 반영
+#### § 커널 드라이버 수정하여 반영 (Working in progress)
   - [Modifying a built-in Linux kernel device driver](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Develop_on_Arm%C2%AE_Cortex%C2%AE-A7/Modify,_rebuild_and_reload_the_Linux%C2%AE_kernel#Modifying_a_built-in_Linux_kernel_device_driver)를 참고하여 built-in 커널 드라이버에 간단한 메세지를 삽입, 빌드하여 타겟 보드에 배포 후 확인한다.
-  > Working-on progress.
 
 <br/><br/>
 ### STEP.5
-#### § 더 많은 주제
-  > Working-on progress.
+#### § 더 많은 주제 (Working in progress)
+
