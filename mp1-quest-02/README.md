@@ -66,5 +66,12 @@ Deveoper Package에서는 사용자가 타겟 시스템을 빌드했던 환경(�
       <img src="https://github.com/marcusjang78/korea-stm32mp1-quest/blob/master/mp1-quest-02/images/build-outputs.png" alt="" width="100%" height="100%" />
 #### § 타겟 보드로 커널 재배포
   - [Deploy the Linux® kernel on the board](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Develop_on_Arm%C2%AE_Cortex%C2%AE-A7/Modify,_rebuild_and_reload_the_Linux%C2%AE_kernel#Build_the_Linux-C2-AE_kernel_source_code_for_the_first_time)를 참고하여 빌드된 Kernel, kernel modules, Device Tree등을 타겟 보드로 배포하고 정상 부팅하는지 확인해 본다.
+  > Working-on progress.
 #### § 커널 드라이버 수정하여 반영
-  - [](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Develop_on_Arm%C2%AE_Cortex%C2%AE-A7/Modify,_rebuild_and_reload_the_Linux%C2%AE_kernel#Modifying_a_built-in_Linux_kernel_device_driver)를 참고하여 built-in 커널 드라이버에 간단한 메세지를 삽입, 
+  - [Modifying a built-in Linux kernel device driver](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Develop_on_Arm%C2%AE_Cortex%C2%AE-A7/Modify,_rebuild_and_reload_the_Linux%C2%AE_kernel#Modifying_a_built-in_Linux_kernel_device_driver)를 참고하여 built-in 커널 드라이버에 간단한 메세지를 삽입, 빌드하여 타겟 보드에 배포 후 확인한다.
+  > Working-on progress.
+
+<br/><br/>
+### STEP.5
+#### § 더 많은 주제
+  > Working-on progress.
