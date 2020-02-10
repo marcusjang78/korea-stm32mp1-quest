@@ -48,7 +48,7 @@ Deveoper Package에서는 사용자가 타겟 시스템을 빌드했던 환경(�
 
 <br/><br/>
 ### STEP.4
-  - 앞서 설명한대로 Developer Package는 핵심 소프트웨어 컴포넌트로 U-Boot, TF-A, Linux® kernel, OP-TEE의 소스코드를 제공한다.<br/>
+  앞서 설명한대로 Developer Package는 핵심 소프트웨어 컴포넌트로 U-Boot, TF-A, Linux® kernel, OP-TEE의 소스코드를 제공한다.<br/>
   여기에서는 [Modify, rebuild and reload the Linux® kernel](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Develop_on_Arm%C2%AE_Cortex%C2%AE-A7/Modify,_rebuild_and_reload_the_Linux%C2%AE_kernel)를 참고하여 이 중에서 Linux® kernel을 빌드하여 타겟에 배포(Deploy)하는 과정을 확인해 본다.
 #### § 리눅스 커널 소스 다운로드, 패치
   - [Download the the Linux® kernel source code](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Develop_on_Arm%C2%AE_Cortex%C2%AE-A7/Modify,_rebuild_and_reload_the_Linux%C2%AE_kernel#Download_the_the_Linux-C2-AE_kernel_source_code) 항목의 링크를 통해 소스 코드를 다운로드하고 이어지는 [Prepare the Linux® kernel source code](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Develop_on_Arm%C2%AE_Cortex%C2%AE-A7/Modify,_rebuild_and_reload_the_Linux%C2%AE_kernel#Prepare_the_Linux-C2-AE_kernel_source_code)를 참고하여 커널 소스 압축을 해제하고 포함된 패치들을 적용한다.
