@@ -24,7 +24,7 @@ Deveoper Package에서는 사용자가 타겟 시스템을 빌드했던 환경(�
 
 <br/><br/>
 ### STEP.2
-#### § 타겟 준비
+#### § 타겟 보드 준비
   - Developer Package는 기본적으로 Starter Package에서 제공되는 이미지에 핵심 소프트웨어 컴포넌트의 수정이 가능하도록 각각의 개별 전체 소스코드와 함께 이를 cross-build 할 수 있는 SDK를 제공한다.<br/>따라서 Starter Package가 설치된 타겟 보드(DK2)가 요구된다.<br/>
     > 만약 타겟 보드(DK2)에 Starter Package가 설치되지 않은 경우라면 이전 [`1st QUSET`](https://github.com/marcusjang78/korea-stm32mp1-quest/blob/master/mp1-quest-01/README.md) 또는 [`Getting Started - Let's start`](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Let%27s_start)를 참고하여 패키지를 먼저 설치하고 진행하도록 하자.
   - 참고로 Developer Package에서 제공하는 핵심 소프트웨어 컴포넌트는 아래와 같다.
@@ -36,6 +36,12 @@ Deveoper Package에서는 사용자가 타겟 시스템을 빌드했던 환경(�
 <br/><br/>
 ### STEP.3
 #### § A7 어플리케이션 작성 및 확인
-  - 
-  (2) 간단한 Hello-world 작성<br/>
-  (3) Linux kernel 수정 및 Rebuild<br/>
+  - 기본 제공되는 ecosystem, st-image-weston (openstlinux-weston)은 [Wayland](https://ko.wikipedia.org/wiki/%EC%9B%A8%EC%9D%B4%EB%9E%9C%EB%93%9C) 기반에 GTK+ GUI 환경을 제공한다.<br/>
+  [Create a simple hello-world application](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Develop_on_Arm%C2%AE_Cortex%C2%AE-A7/Create_a_simple_hello-world_application) 항목을 통해 앞서 설치한 SDK를 사용하여 GTK+ application을 빌드하고 타겟에 배포(deploy by scp tool)하여 동작을 확인해 볼 수 있다.
+    <kbd><img src="https://wiki.st.com/stm32mpu/nsfr_img_auth.php/thumb/c/c9/STM32MP1_gtk_hello_world.png/600px-STM32MP1_gtk_hello_world.png" alt="" width="100%" height="100%" /></kbd>
+  - 간단한 Console Application 빌드도 가능하다.
+    <img src="https://github.com/marcusjang78/korea-stm32mp1-quest/blob/master/mp1-quest-02/images/host-console-hello-world.png" alt="" width="100%" height="100%" />
+    <img src="https://github.com/marcusjang78/korea-stm32mp1-quest/blob/master/mp1-quest-02/images/target-console-hello-world.png" alt="" width="100%" height="100%" />
+
+<br/><br/>
+(3) Linux kernel 수정 및 Rebuild<br/>
