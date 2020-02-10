@@ -8,7 +8,7 @@
 
 ## 실 습
 ### PREFACE
-  - 이번 Quest의 주제는 Wiki page, [Develop on Arm® Cortex®-A7](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Develop_on_Arm%C2%AE_Cortex%C2%AE-A7) 내용을 확인하고 실습해 보는 것이다.<br/>
+  이번 Quest의 주제는 Wiki page, [Develop on Arm® Cortex®-A7](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Develop_on_Arm%C2%AE_Cortex%C2%AE-A7) 내용을 확인하고 실습해 보는 것이다.<br/>
   Developer Package는 Starter Package를 기반으로 제공되는 (이후 설명할 Distribution Package에 비해) 제한적인 개발, 배포가 가능한 소프트웨어 패키지로 정의된다.<br/>
   Developer Package에 대한 요약을 [[패키지 선택 - Developer Package]](https://wiki.st.com/stm32mpu/wiki/Which_STM32MPU_Embedded_Software_Package_better_suits_your_needs#Developer_Package) 항목을 통해 살펴보고 시작하자.
 
