@@ -85,7 +85,7 @@ Deveoper Package에서는 (Ecosystem - Starter Package 용) 타겟 시스템을 
 ### STEP.5
 #### § 더 많은 주제 (Working in progress)
   - Developer Package에는 Linux® kernel 외에도 U-Boot, OP-TEE, TF-A 소프트웨어 컴포넌트의 코드가 제공된다. 아래의 주제에서 Develper Package에 대한 전체 내용을 확인할 수 있다. 전체 내용은 A7 소프트웨어 컴포넌트, M4 외 매우 많은 소주제를 다루고 있으나 이 중 [U-Boot 설치](https://wiki.st.com/stm32mpu/index.php/STM32MP1_Developer_Package#Installing_the_U-Boot) 정도는 꼭 수행해 보도록 하자.
-    > [STM32MP1 Developer Package](https://wiki.st.com/stm32mpu/index.php/STM32MP1_Developer_Package)
+    > <strong><u>[`STM32MP1 Developer Package`](https://wiki.st.com/stm32mpu/index.php/STM32MP1_Developer_Package)</strong></u>
 
 <br/><br/>
 ### FIN.
