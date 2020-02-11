@@ -64,18 +64,29 @@ Deveoper Package에서는 (Ecosystem - Starter Package 용) 타겟 시스템을 
     - 빌드 과정은 `리눅스 커널 이미지`와 커널이 런타임에 동적으로 로드하는 `커널 모듈` 빌드의 두가지 단계로 크게 구성된다.
     - 모든 과정을 완료하면 vmlinux(elf)와 이를 바탕으로 생성된 uImage(compressed + u-boot wrapper) 외에 device tree (dtbs), artifact(kernel moudles)들이 생성되는데 대략 아래와 같다.
       <img src="https://github.com/marcusjang78/korea-stm32mp1-quest/blob/master/mp1-quest-02/images/build-outputs.png" alt="" width="100%" height="100%" />
+      - Kernel이 로드되는 0xC2000040은 STM32MP1 memory map상 DDR 영역이다. 0x40(64)-bytes는 uImage header를 의미.
 #### § 타겟 보드로 커널 재배포
-  - [Deploy the Linux® kernel on the board](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Develop_on_Arm%C2%AE_Cortex%C2%AE-A7/Modify,_rebuild_and_reload_the_Linux%C2%AE_kernel#Build_the_Linux-C2-AE_kernel_source_code_for_the_first_time)를 참고하여 빌드된 Kernel, kernel modules, Device Tree등을 타겟 보드로 배포하고 정상 부팅하는지 확인해 본다.
+  - [Deploy the Linux® kernel on the board](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Develop_on_Arm%C2%AE_Cortex%C2%AE-A7/Modify,_rebuild_and_reload_the_Linux%C2%AE_kernel#Build_the_Linux-C2-AE_kernel_source_code_for_the_first_time)를 참고하여 빌드된 Kernel, kernel modules, dtb(device tree blob)등을 타겟 보드로 배포하고 정상 부팅하는지 확인해 본다.
     - 배포는 크게 아래의 3단계로 구성된다.
       - [Push the Linux® kernel into the board](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Develop_on_Arm%C2%AE_Cortex%C2%AE-A7/Modify,_rebuild_and_reload_the_Linux%C2%AE_kernel#Push_the_Linux-C2-AE_kernel_into_the_board): 커널 이미지(uImage) 배포
       - [Push the devicetree into the board](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Develop_on_Arm%C2%AE_Cortex%C2%AE-A7/Modify,_rebuild_and_reload_the_Linux%C2%AE_kernel#Push_the_devicetree_into_the_board): Device Tree Blob (dtb) 배포
       - [Push the kernel modules into the board](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Develop_on_Arm%C2%AE_Cortex%C2%AE-A7/Modify,_rebuild_and_reload_the_Linux%C2%AE_kernel#Push_the_kernel_modules_into_the_board): 커널 모듈 배포
+    - <strong>Warning</strong>
+      - 모든 단계는 반드시 함께 수행해 주어야 한다. 반드시 kernel, dtb, modules을 함께 업데이트하고 target에 module 의존성을 재구축(`depmod`)해야 한다.
+      - 예를 들어 kernel만 업데이트하는 경우 kernel moudle load에 실패하여 rootfs 파일시스템이 마운트되고 난 직후 초기단계에서 문제가 발생한다. SDcard의 rootfs은 [mmcblk0p6](https://wiki.st.com/stm32mpu/wiki/STM32MP15_Flash_mapping#SD_card_memory_mapping)이므로 커널 로그에서 mmcblk0p6 mount 지점에서 문제가 되는 것을 확인할 있다. (~~아래 이미지는 오류 상황은 아님~~)
+        <img src="https://github.com/marcusjang78/korea-stm32mp1-quest/blob/master/mp1-quest-02/images/mmcblk0p6-rootfs.png" alt="" width="100%" height="100%" />
 #### § 커널 드라이버 수정하여 반영
   - [Modifying a built-in Linux kernel device driver](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Develop_on_Arm%C2%AE_Cortex%C2%AE-A7/Modify,_rebuild_and_reload_the_Linux%C2%AE_kernel#Modifying_a_built-in_Linux_kernel_device_driver)를 참고하여 built-in 커널 드라이버에 간단한 메세지를 삽입, 빌드하여 타겟 보드에 배포 후 확인한다.
+    <img src="https://github.com/marcusjang78/korea-stm32mp1-quest/blob/master/mp1-quest-02/images/modify-kernel-driver.png" alt="" width="100%" height="100%" />
     - 본 예제는 [DRM(Direct Rendering Manager)](https://en.wikipedia.org/wiki/Direct_Rendering_Manager)의 STM32MP1 그래픽 출력 관련 하드웨어(MIPI 및 LTDC) 드라이버 관련 코드의 일부를 수정해 보는 것.
       > <u>Ecosystem에서 그래픽 관련 장치 드라이버는 DRM/KMS 기반으로 제공됨을 의미</u>
 
 <br/><br/>
 ### STEP.5
 #### § 더 많은 주제 (Working in progress)
+  - Developer Package에는 Linux® kernel 외에도 U-Boot, OP-TEE, TF-A 소프트웨어 컴포넌트의 코드가 제공된다. 아래의 주제에서 Develper Package에 대한 전체 내용을 확인할 수 있다. 전체 내용은 A7 소프트웨어 컴포넌트, M4 외 매우 많은 소주제를 다루고 있으나 이 중 [U-Boot 설치](https://wiki.st.com/stm32mpu/index.php/STM32MP1_Developer_Package#Installing_the_U-Boot) 정도는 꼭 수행해 보도록 하자.
+    > [STM32MP1 Developer Package](https://wiki.st.com/stm32mpu/index.php/STM32MP1_Developer_Package)
 
+<br/><br/>
+### FIN.
+<br/>
