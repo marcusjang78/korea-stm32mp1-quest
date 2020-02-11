@@ -72,7 +72,7 @@ Deveoper Package에서는 (Ecosystem - Starter Package 용) 타겟 시스템을 
       - [Push the devicetree into the board](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Develop_on_Arm%C2%AE_Cortex%C2%AE-A7/Modify,_rebuild_and_reload_the_Linux%C2%AE_kernel#Push_the_devicetree_into_the_board): Device Tree Blob (dtb) 배포
       - [Push the kernel modules into the board](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Develop_on_Arm%C2%AE_Cortex%C2%AE-A7/Modify,_rebuild_and_reload_the_Linux%C2%AE_kernel#Push_the_kernel_modules_into_the_board): 커널 모듈 배포
     - <strong>Warning</strong>
-      - 모든 단계는 반드시 함께 수행해 주어야 한다. 반드시 kernel, dtb, modules을 함께 업데이트하고 target에 module 의존성을 재구축(`depmod`)해야 한다.
+      - 모든 단계는 반드시 함께 수행해 주어야 한다. 반드시 target reboot 전에 kernel, dtb, modules을 함께 업데이트하고 target에 module 의존성을 재구축(`depmod`)해야 한다.
       - 예를 들어 kernel만 업데이트하는 경우 kernel moudle load에 실패하여 rootfs 파일시스템이 마운트되고 난 직후 초기단계에서 문제가 발생한다. SDcard의 rootfs은 [mmcblk0p6](https://wiki.st.com/stm32mpu/wiki/STM32MP15_Flash_mapping#SD_card_memory_mapping)이므로 커널 로그에서 mmcblk0p6 mount 지점에서 문제가 되는 것을 확인할 있다. (~~아래 이미지는 오류 상황은 아님~~)
         <img src="https://github.com/marcusjang78/korea-stm32mp1-quest/blob/master/mp1-quest-02/images/mmcblk0p6-rootfs.png" alt="" width="100%" height="100%" />
 #### § 커널 드라이버 수정하여 반영
