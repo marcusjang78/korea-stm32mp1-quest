@@ -28,7 +28,8 @@
     - <strong>Note</strong>
       - 패키지 다운로드 및 압축해제에 대한 내용이 ecosystem 버전별로 나뉘어 설명되어 있다. 반드시 타겟에 설치된 ecosystem 버전과 동일한 버전의 소프트웨어 패키지를 설치하도록 하자. (해당 Quest는 <ins><em><strong>Ecosystem v.1.1.0</strong></em></ins> 기준으로 작성되어 있다)
       - 소프트웨어 패키지는 STM32 MP1 HAL 라이브러리로 별도의 설치과정은 없다.
-
+    - 설치된 패키지 구조에 대한 간략한 설명을 [STM32Cube MP1 package structure](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Develop_on_Arm%C2%AE_Cortex%C2%AE-M4/Install_STM32Cube_MP1_package#For_ecosystem_release_v1-1-0_2)를 통해 꼭 한번 확인해 보도록 하자.
+    <img src="https://github.com/marcusjang78/korea-stm32mp1-quest/blob/master/mp1-quest-03/images/stm32cube-mp1-sw-package.png" alt="" width="100%" height="100%" /><br/>
 <br/><br/>
 ### STEP.2 (Working in progress)
   (3) Firmware 작성 및 다운로드
