@@ -7,7 +7,7 @@
 
 ## 실 습
 ### STEP.1
-+ [Modifying the Linux kernel device tree](https://wiki.st.com/stm32mpu/wiki/How_to_cross-compile_with_the_Distribution_Package#Modifying_the_Linux_kernel_device_tree) 참고하여 DK2 보드의 LED(LD3)를 토글 해 본다.<br/>
++ [Modifying the Linux kernel device tree](https://wiki.st.com/stm32mpu/wiki/How_to_cross-compile_with_the_Distribution_Package#Modifying_the_Linux_kernel_device_tree) 참고하여 DK2 보드의 LED(LD3)를 ON 해 본다.<br/>
   (1) LED GPIO Device tree 수정<br/>
   (2) bitbake virtual/kernel -C compile<br/>
-  (3) 최종 이미지 빌드 및 flashing, LED 토글 확인<br/>
+  (3) 최종 이미지 빌드 및 flashing, LED(LD3) ON 확인<br/>
