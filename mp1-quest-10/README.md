@@ -13,7 +13,7 @@
   (3) Linux Kernel Optimization<br/>
 
 ### STEP.2
-+ Kernel Image의 모듈 및 라이브러리를 Optimization해 본다<br/>
++ Kernel Image의 모듈 및 라이브러리를 Optimization하여 Image 사이즈를 줄인다.<br/>
   (1) Not yet<br/>
   (2) Not yet<br/>
   (3) Not yet<br/>
