@@ -13,7 +13,7 @@
   (3) Linux Kernel Optimization<br/>
 
 ### STEP.2
-+ Kernel Image의 모듈 및 라이브러리를 Optimization하여 Image 사이즈를 줄인다.<br/>
-  (1) Not yet<br/>
-  (2) Not yet<br/>
-  (3) Not yet<br/>
++ st-image-core를 빌드하여 이미지 size를 줄여본다.<br/>
+  (1) bitbake st-image-core<br/>
+  (2) flashing image<br/>
+  (3) st-image-weston과 비교하여 달라진 것을 확인한다.<br/>
