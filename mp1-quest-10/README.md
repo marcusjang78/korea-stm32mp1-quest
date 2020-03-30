@@ -17,3 +17,4 @@
   (1) bitbake st-image-core<br/>
   (2) flashing image<br/>
   (3) st-image-weston과 비교하여 달라진 것을 확인한다.<br/>
+  (4) 기타 참고 : https://www.yoctoproject.org/docs/2.6/mega-manual/mega-manual.html#usingpoky-extend-customimage <br/>
